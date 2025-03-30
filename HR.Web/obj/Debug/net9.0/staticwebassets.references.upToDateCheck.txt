@@ -1,0 +1,1 @@
+D:\HRERP\HR.API\obj\Debug\net9.0\staticwebassets.build.json

@@ -1,0 +1,12 @@
+D:\HRERP\HR.Core\obj\Debug\net9.0\HR.Core.csproj.AssemblyReference.cache
+D:\HRERP\HR.Core\obj\Debug\net9.0\HR.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\HRERP\HR.Core\obj\Debug\net9.0\HR.Core.AssemblyInfoInputs.cache
+D:\HRERP\HR.Core\obj\Debug\net9.0\HR.Core.AssemblyInfo.cs
+D:\HRERP\HR.Core\obj\Debug\net9.0\HR.Core.csproj.CoreCompileInputs.cache
+D:\HRERP\HR.Core\bin\Debug\net9.0\HR.Core.deps.json
+D:\HRERP\HR.Core\bin\Debug\net9.0\HR.Core.dll
+D:\HRERP\HR.Core\bin\Debug\net9.0\HR.Core.pdb
+D:\HRERP\HR.Core\obj\Debug\net9.0\HR.Core.dll
+D:\HRERP\HR.Core\obj\Debug\net9.0\refint\HR.Core.dll
+D:\HRERP\HR.Core\obj\Debug\net9.0\HR.Core.pdb
+D:\HRERP\HR.Core\obj\Debug\net9.0\ref\HR.Core.dll
