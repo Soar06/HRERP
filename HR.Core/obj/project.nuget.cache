@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J//7xb+bp6Q=",
+  "dgSpecHash": "uGqbUJJ5Kc4=",
   "success": true,
-  "projectFilePath": "D:\\HRERP\\HR.Core\\HR.Core.csproj",
+  "projectFilePath": "D:\\.Net\\HRERP\\HR.Core\\HR.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512"
   ],

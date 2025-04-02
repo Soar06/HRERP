@@ -2431,11 +2431,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\HRERP\\HR.Web\\HR.Web.csproj",
+      "projectUniqueName": "D:\\.Net\\HRERP\\HR.Web\\HR.Web.csproj",
       "projectName": "HR.Web",
-      "projectPath": "D:\\HRERP\\HR.Web\\HR.Web.csproj",
+      "projectPath": "D:\\.Net\\HRERP\\HR.Web\\HR.Web.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "D:\\HRERP\\HR.Web\\obj\\",
+      "outputPath": "D:\\.Net\\HRERP\\HR.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2457,11 +2457,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\HRERP\\HR.API\\HR.API.csproj": {
-              "projectPath": "D:\\HRERP\\HR.API\\HR.API.csproj"
+            "D:\\.Net\\HRERP\\HR.API\\HR.API.csproj": {
+              "projectPath": "D:\\.Net\\HRERP\\HR.API\\HR.API.csproj"
             },
-            "D:\\HRERP\\HR.Core\\HR.Core.csproj": {
-              "projectPath": "D:\\HRERP\\HR.Core\\HR.Core.csproj"
+            "D:\\.Net\\HRERP\\HR.Core\\HR.Core.csproj": {
+              "projectPath": "D:\\.Net\\HRERP\\HR.Core\\HR.Core.csproj"
             }
           }
         }

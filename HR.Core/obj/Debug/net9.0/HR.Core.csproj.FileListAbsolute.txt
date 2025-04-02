@@ -10,3 +10,16 @@ D:\HRERP\HR.Core\obj\Debug\net9.0\HR.Core.dll
 D:\HRERP\HR.Core\obj\Debug\net9.0\refint\HR.Core.dll
 D:\HRERP\HR.Core\obj\Debug\net9.0\HR.Core.pdb
 D:\HRERP\HR.Core\obj\Debug\net9.0\ref\HR.Core.dll
+D:\.Net\HRERP\HR.Core\bin\Debug\net9.0\HR.Core.deps.json
+D:\.Net\HRERP\HR.Core\bin\Debug\net9.0\HR.Core.dll
+D:\.Net\HRERP\HR.Core\bin\Debug\net9.0\HR.Core.pdb
+D:\.Net\HRERP\HR.Core\obj\Debug\net9.0\HR.Core.csproj.AssemblyReference.cache
+D:\.Net\HRERP\HR.Core\obj\Debug\net9.0\HR.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\.Net\HRERP\HR.Core\obj\Debug\net9.0\HR.Core.AssemblyInfoInputs.cache
+D:\.Net\HRERP\HR.Core\obj\Debug\net9.0\HR.Core.AssemblyInfo.cs
+D:\.Net\HRERP\HR.Core\obj\Debug\net9.0\HR.Core.csproj.CoreCompileInputs.cache
+D:\.Net\HRERP\HR.Core\obj\Debug\net9.0\HR.Core.sourcelink.json
+D:\.Net\HRERP\HR.Core\obj\Debug\net9.0\HR.Core.dll
+D:\.Net\HRERP\HR.Core\obj\Debug\net9.0\refint\HR.Core.dll
+D:\.Net\HRERP\HR.Core\obj\Debug\net9.0\HR.Core.pdb
+D:\.Net\HRERP\HR.Core\obj\Debug\net9.0\ref\HR.Core.dll

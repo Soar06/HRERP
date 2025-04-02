@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oiYnlb9q3Xo=",
+  "dgSpecHash": "K+sL0aRRL8Q=",
   "success": true,
-  "projectFilePath": "D:\\HRERP\\HR.Tests\\HR.Tests.csproj",
+  "projectFilePath": "D:\\.Net\\HRERP\\HR.Tests\\HR.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
