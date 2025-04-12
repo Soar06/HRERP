@@ -243,7 +243,6 @@ D:\.Net\HRERP\HR.API\obj\Debug\net9.0\staticwebassets\msbuild.build.HR.API.props
 D:\.Net\HRERP\HR.API\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.HR.API.props
 D:\.Net\HRERP\HR.API\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.HR.API.props
 D:\.Net\HRERP\HR.API\obj\Debug\net9.0\staticwebassets.pack.json
-D:\.Net\HRERP\HR.API\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 D:\.Net\HRERP\HR.API\obj\Debug\net9.0\HR.API.csproj.Up2Date
 D:\.Net\HRERP\HR.API\obj\Debug\net9.0\HR.API.dll
 D:\.Net\HRERP\HR.API\obj\Debug\net9.0\refint\HR.API.dll

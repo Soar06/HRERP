@@ -1,0 +1,51 @@
+﻿@page
+@model HR.Web.Pages.Auth.LoginModel
+
+<div class="container-fluid min-vh-100 d-flex flex-column" style="background: linear-gradient(to bottom, purple, red);">
+    <!-- Header -->
+    <header class="p-3">
+        <h1 class="text-white">HR ERP</h1>
+    </header>
+
+    <!-- Main Content: Login Form -->
+    <main class="flex-grow-1 d-flex justify-content-center align-items-center">
+        <div class="card shadow p-4" style="width: 100%; max-width: 400px;">
+            <h2 class="text-center mb-4">Login</h2>
+
+            @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+            {
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    @Model.ErrorMessage
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+
+            @if (!string.IsNullOrEmpty(Model.SuccessMessage))
+            {
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    @Model.SuccessMessage
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+
+            <form method="post">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Username</label>
+                    <input type="email" id="email" name="Email" class="form-control" placeholder="Enter your email" required />
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" id="password" name="Password" class="form-control" placeholder="Enter your password" required />
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Login</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="p-3 text-center">
+        <a href="/Contact" class="text-white mx-2">Contact</a>
+        <a href="/About" class="text-white mx-2">About Us</a>
+        <a href="https://github.com/yourusername" class="text-white mx-2">Profile</a>
+    </footer>
+</div>

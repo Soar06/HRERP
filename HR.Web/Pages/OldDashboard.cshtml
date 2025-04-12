@@ -1,0 +1,22 @@
+﻿@page
+@model HR.Web.Pages.DashboardModel
+
+<div class="container min-vh-100 d-flex flex-column" style="background: linear-gradient(to bottom, purple, red);">
+    <header class="p-3">
+        <h1 class="text-white">HR ERP</h1>
+    </header>
+    <main class="flex-grow-1 d-flex justify-content-center align-items-center">
+        <div class="card shadow p-4" style="width: 100%; max-width: 400px;">
+            <h2 class="text-center mb-4">Welcome to HR ERP</h2>
+            <p class="text-center">You are logged in as @Model.UserEmail</p>
+            <form method="post" asp-page-handler="Logout">
+                <button type="submit" class="btn btn-danger w-100">Logout</button>
+            </form>
+        </div>
+    </main>
+    <footer class="p-3 text-center">
+        <a href="/Contact" class="text-white mx-2">Contact</a>
+        <a href="/About" class="text-white mx-2">About Us</a>
+        <a href="https://github.com/yourusername" class="text-white mx-2">Profile</a>
+    </footer>
+</div>

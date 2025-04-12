@@ -1,0 +1,46 @@
+﻿@page
+@model HR.Web.Pages.Auth.RegisterModel
+
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card shadow p-4" style="width: 100%; max-width: 400px;">
+        <h2 class="text-center mb-4">Register for HR ERP</h2>
+
+        @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+        {
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                @Model.ErrorMessage
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+
+        @if (!string.IsNullOrEmpty(Model.SuccessMessage))
+        {
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                @Model.SuccessMessage
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+
+        <form method="post">
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="Email" class="form-control" placeholder="Enter your email" required />
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" id="password" name="Password" class="form-control" placeholder="Enter your password" required />
+            </div>
+            <div class="mb-3">
+                <label for="role" class="form-label">Role</label>
+                <select id="role" name="Role" class="form-select">
+                    <option value="Employee" selected>Employee</option>
+                    <option value="Admin">Admin</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Register</button>
+            <p class="text-center mt-3">
+                Already have an account? <a asp-page="/Auth/Login" class="text-primary">Login here</a>.
+            </p>
+        </form>
+    </div>
+</div>
