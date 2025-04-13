@@ -5,7 +5,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Pomelo.EntityFrameworkCore.MySql.Infrastructure; 
 
 #nullable disable
 
@@ -18,7 +17,7 @@ namespace HR.Infrastructure.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "9.0.3")
+                .HasAnnotation("ProductVersion", "8.0.8")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
@@ -38,6 +37,23 @@ namespace HR.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Departments");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Engineering"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Human Resources"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Marketing"
+                        });
                 });
 
             modelBuilder.Entity("HR.Core.Entities.Employee", b =>
@@ -48,6 +64,13 @@ namespace HR.Infrastructure.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("Age")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ContractLink")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
                     b.Property<int>("DepartmentId")
                         .HasColumnType("int");
 
@@ -55,17 +78,30 @@ namespace HR.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<string>("Level")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<string>("Role")
+                    b.Property<string>("PhoneNumber")
                         .IsRequired()
                         .HasColumnType("longtext");
+
+                    b.Property<int?>("Ratings")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("DepartmentId");
+
+                    b.HasIndex("UserId")
+                        .IsUnique();
 
                     b.ToTable("Employees");
                 });
@@ -129,7 +165,7 @@ namespace HR.Infrastructure.Migrations
                         {
                             Id = 1,
                             Email = "admin@hr.com",
-                            PasswordHash = "$2a$11$.gpQQDUqdP7K6QQYqI297uVL2ztMfAL6WxTazV4mi71Pxn6tEDmai",
+                            PasswordHash = "$2a$11$UO2Z1x6AcENWptZFo4J.V.JFVKh4Zatf9ncXyQy.FALikCBhsL8Hu",
                             Role = "Admin"
                         });
                 });
@@ -142,13 +178,21 @@ namespace HR.Infrastructure.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("HR.Core.Entities.User", "User")
+                        .WithOne("Employee")
+                        .HasForeignKey("HR.Core.Entities.Employee", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Department");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("HR.Core.Entities.LeaveRequest", b =>
                 {
                     b.HasOne("HR.Core.Entities.Employee", "Employee")
-                        .WithMany()
+                        .WithMany("LeaveRequests")
                         .HasForeignKey("EmployeeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -159,6 +203,16 @@ namespace HR.Infrastructure.Migrations
             modelBuilder.Entity("HR.Core.Entities.Department", b =>
                 {
                     b.Navigation("Employees");
+                });
+
+            modelBuilder.Entity("HR.Core.Entities.Employee", b =>
+                {
+                    b.Navigation("LeaveRequests");
+                });
+
+            modelBuilder.Entity("HR.Core.Entities.User", b =>
+                {
+                    b.Navigation("Employee");
                 });
 #pragma warning restore 612, 618
         }
