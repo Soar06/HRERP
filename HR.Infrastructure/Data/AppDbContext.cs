@@ -9,6 +9,8 @@ public class AppDbContext : DbContext
     public DbSet<Employee> Employees { get; set; }
     public DbSet<Department> Departments { get; set; }
     public DbSet<LeaveRequest> LeaveRequests { get; set; }
+    public DbSet<Project> Projects { get; set; }
+    public DbSet<EmployeeProject> EmployeeProjects { get; set; }
 
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
     {
@@ -17,6 +19,11 @@ public class AppDbContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         // Configure relationships
+        modelBuilder.Entity<User>()
+            .HasOne(u => u.Employee)
+            .WithOne(e => e.User)
+            .HasForeignKey<Employee>(e => e.UserId);
+
         modelBuilder.Entity<Employee>()
             .HasOne(e => e.Department)
             .WithMany(d => d.Employees)
@@ -27,27 +34,36 @@ public class AppDbContext : DbContext
             .WithMany(e => e.LeaveRequests)
             .HasForeignKey(lr => lr.EmployeeId);
 
-        modelBuilder.Entity<User>()
-            .HasOne(u => u.Employee)
-            .WithOne(e => e.User)
-            .HasForeignKey<Employee>(e => e.UserId);
+        // Configure many-to-many relationship between Employee and Project
+        modelBuilder.Entity<EmployeeProject>()
+            .HasKey(ep => new { ep.EmployeeId, ep.ProjectId });
 
-        // Seed admin user
+        modelBuilder.Entity<EmployeeProject>()
+            .HasOne(ep => ep.Employee)
+            .WithMany(e => e.EmployeeProjects)
+            .HasForeignKey(ep => ep.EmployeeId);
+
+        modelBuilder.Entity<EmployeeProject>()
+            .HasOne(ep => ep.Project)
+            .WithMany(p => p.EmployeeProjects)
+            .HasForeignKey(ep => ep.ProjectId);
+
+        // Seed Departments
+        modelBuilder.Entity<Department>().HasData(
+            new Department { Id = 1, Name = "Engineering" },
+            new Department { Id = 2, Name = "Human Resources" },
+            new Department { Id = 3, Name = "Marketing" }
+        );
+
+        // Seed Admin User
         modelBuilder.Entity<User>().HasData(
             new User
             {
                 Id = 1,
                 Email = "admin@hr.com",
-                PasswordHash = BCrypt.Net.BCrypt.HashPassword("admin123"),
+                PasswordHash = "$2a$11$Ln4OI2rhMspkJY6.82NxjO.diG/s/dNTIiEN6CgtgXbl.Wf881wJi", // Password: admin123
                 Role = "Admin"
             }
-        );
-
-        // Seed departments (if not already present)
-        modelBuilder.Entity<Department>().HasData(
-            new Department { Id = 1, Name = "Engineering" },
-            new Department { Id = 2, Name = "Human Resources" },
-            new Department { Id = 3, Name = "Marketing" }
         );
     }
 }

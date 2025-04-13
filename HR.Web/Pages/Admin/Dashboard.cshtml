@@ -1,192 +1,649 @@
 ﻿@page
 @model HR.Web.Pages.Admin.DashboardModel
 
-<div class="container-fluid vh-100 d-flex flex-column" style="background: linear-gradient(to bottom, purple, red);">
+<div class="container-fluid d-flex flex-column vh-100">
+    <!-- Toast Container -->
+    <div class="position-fixed top-0 end-0 p-3" style="z-index: 1050;">
+        <div id="successToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="3000">
+            <div class="toast-header bg-success text-white">
+                <strong class="me-auto">Success</strong>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                @Model.SuccessMessage
+            </div>
+        </div>
+        <div id="errorToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="3000">
+            <div class="toast-header bg-danger text-white">
+                <strong class="me-auto">Error</strong>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                @Model.ErrorMessage
+            </div>
+        </div>
+    </div>
+
     <!-- Header -->
-    <header class="p-3 m-0">
-        <h1 class="text-white m-0">HR ERP - Admin Dashboard</h1>
+    <header class="p-3 bg-primary text-white">
+        <h1 class="m-0">HR ERP - Admin Dashboard</h1>
     </header>
 
     <!-- Main Content with Sidebar -->
     <div class="d-flex flex-grow-1">
         <!-- Sidebar -->
-        <nav class="bg-dark text-white p-3" style="width: 250px;">
+        <nav class="bg-dark text-white p-3" style="width: 250px; height: 100%;">
             <h4 class="text-center mb-4">Admin Menu</h4>
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#resource-distribution" onclick="showSection('resource-distribution')">Resource Distribution</a>
+                    <a class="nav-link text-white sidebar-link" href="#project-progress" onclick="showSection('project-progress')">Project Progress</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#employee-list" onclick="showSection('employee-list')">Employee List</a>
+                    <hr class="border-light">
+                    <a class="nav-link text-white sidebar-link" href="#employee-list" onclick="showSection('employee-list')">Employee List</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#revenue-chart" onclick="showSection('revenue-chart')">Revenue Chart</a>
+                    <hr class="border-light">
+                    <a class="nav-link text-white sidebar-link" href="#revenue-chart" onclick="showSection('revenue-chart')">Revenue Chart</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#create-employee" onclick="showSection('create-employee')">Create Employee Account</a>
+                    <hr class="border-light">
+                    <a class="nav-link text-white sidebar-link" href="#create-employee" onclick="showSection('create-employee')">Create Employee Account</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#manage-departments" onclick="showSection('manage-departments')">Manage Departments</a>
+                    <hr class="border-light">
+                    <a class="nav-link text-white sidebar-link" href="#manage-departments" onclick="showSection('manage-departments')">Manage Departments</a>
                 </li>
                 <li class="nav-item">
+                    <hr class="border-light">
+                    <a class="nav-link text-white sidebar-link" href="#manage-projects" onclick="showSection('manage-projects')">Manage Projects</a>
+                </li>
+                <li class="nav-item">
+                    <hr class="border-light">
                     <form method="post" asp-page-handler="Logout">
-                        <button type="submit" class="nav-link text-white btn btn-link">Logout</button>
+                        <button type="submit" class="nav-link text-white btn btn-link sidebar-link w-100 text-start">Logout</button>
                     </form>
                 </li>
             </ul>
         </nav>
 
         <!-- Main Content Area -->
-        <main class="flex-grow-1 p-4">
-            <div id="welcome-section" class="card shadow p-4">
-                <h2 class="text-center mb-4">Welcome, Admin</h2>
-                <p class="text-center">Select an option from the sidebar to get started.</p>
-            </div>
-
-            <div id="resource-distribution" class="card shadow p-4 d-none">
-                <h2 class="text-center mb-4">Resource Distribution</h2>
-                <p>View and modify how employees are distributed across projects.</p>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Project</th>
-                            <th>Employee</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Project A</td>
-                            <td>John Doe</td>
-                            <td><button class="btn btn-sm btn-warning">Reassign</button></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div id="employee-list" class="card shadow p-4 d-none">
-                <h2 class="text-center mb-4">Employee List</h2>
-                <p>List of all employees in the system.</p>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Name</th>
-                            <th>Email</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>John Doe</td>
-                            <td>john@hr.com</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div id="revenue-chart" class="card shadow p-4 d-none">
-                <h2 class="text-center mb-4">Revenue Chart</h2>
-                <p>Placeholder for revenue chart.</p>
-                <div style="width: 100%; height: 300px; background-color: #ddd; text-align: center; line-height: 300px;">
-                    [Revenue Chart Placeholder]
+        <main class="flex-grow-1 p-4 bg-light" style="height: 100%; overflow: hidden;">
+            <div id="welcome-section" class="card shadow p-4 h-100 d-flex align-items-center justify-content-center">
+                <div class="text-center">
+                    <h2 class="mb-4">Welcome, Admin</h2>
+                    <p>Select an option from the sidebar to get started.</p>
                 </div>
             </div>
 
-            <div id="create-employee" class="card shadow p-4 d-none">
-                <h2 class="text-center mb-4">Create Employee Account</h2>
-                @if (!string.IsNullOrEmpty(Model.SuccessMessage))
-                {
-                    <div class="alert alert-success alert-dismissible fade show" role="alert">
-                        @Model.SuccessMessage
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
-                }
-                @if (!string.IsNullOrEmpty(Model.ErrorMessage))
-                {
-                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                        @Model.ErrorMessage
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
-                }
-                <form method="post" asp-page-handler="CreateEmployee">
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" id="email" name="Email" class="form-control" placeholder="Enter employee email" required />
-                    </div>
-                    <div class="mb-3">
-                        <label for="password" class="form-label">Password</label>
-                        <input type="password" id="password" name="Password" class="form-control" placeholder="Enter password" required />
-                    </div>
-                    <div class="mb-3">
-                        <label for="role" class="form-label">Role</label>
-                        <select id="role" name="Role" class="form-select">
-                            <option value="Employee">Employee</option>
-                            <option value="Admin">Admin</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn btn-primary w-100">Create Account</button>
-                </form>
+            <div id="project-progress" class="card shadow p-4 h-100 d-none" style="display: flex; flex-direction: column;">
+                <h2 class="text-center mb-4">Project Progress</h2>
+                <p>Track the progress and stage of each project.</p>
+                <div class="table-responsive" style="flex: 1; overflow-y: auto;">
+                    <table class="table table-bordered table-hover">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Project Name</th>
+                                <th>Progress</th>
+                                <th>Stage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var project in Model.Projects)
+                            {
+                                <tr>
+                                    <td>@project.Name</td>
+                                    <td>
+                                        <div class="progress position-relative" style="height: 30px;">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 0%;" data-progress="0">
+                                                <span class="position-absolute w-100 text-center text-dark">0%</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <select class="form-select stage-select" onchange="updateStage(this)">
+                                            <option value="Planning" selected>Planning</option>
+                                            <option value="Developing">Developing</option>
+                                            <option value="Testing">Testing</option>
+                                            <option value="Ready">Ready</option>
+                                            <option value="Done">Done</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
-            <div id="manage-departments" class="card shadow p-4 d-none">
-                <h2 class="text-center mb-4">Manage Departments</h2>
-                @if (!string.IsNullOrEmpty(Model.SuccessMessage))
-                {
-                    <div class="alert alert-success alert-dismissible fade show" role="alert">
-                        @Model.SuccessMessage
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
-                }
-                @if (!string.IsNullOrEmpty(Model.ErrorMessage))
-                {
-                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                        @Model.ErrorMessage
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
-                }
-                <h4>Create Department</h4>
-                <form method="post" asp-page-handler="CreateDepartment" class="mb-4">
-                    <div class="mb-3">
-                        <label for="departmentName" class="form-label">Department Name</label>
-                        <input type="text" id="departmentName" name="DepartmentName" class="form-control" placeholder="Enter department name" required />
-                    </div>
-                    <button type="submit" class="btn btn-primary w-100">Create Department</button>
-                </form>
-                <h4>Department List</h4>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Name</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var dept in Model.Departments)
-                        {
+            <div id="employee-list" class="card shadow p-4 h-100 d-none" style="display: flex; flex-direction: column;">
+                <h2 class="text-center mb-4">Employee List</h2>
+                <p>List of all employees in the system.</p>
+                <div class="table-responsive" style="flex: 1; overflow-y: auto;">
+                    <table class="table table-bordered table-hover">
+                        <thead class="table-light">
                             <tr>
-                                <td>@dept.Id</td>
-                                <td>@dept.Name</td>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Department</th>
+                                <th>Level</th>
+                                <th>Ratings</th>
                             </tr>
-                        }
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+                            @foreach (var employee in Model.Employees)
+                            {
+                                <tr>
+                                    <td>@employee.Id</td>
+                                    <td>@employee.Name</td>
+                                    <td>@employee.Email</td>
+                                    <td>@employee.DepartmentName</td>
+                                    <td>@employee.Level</td>
+                                    <td>@(employee.Ratings.HasValue ? employee.Ratings.ToString() : "Not Rated")</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="revenue-chart" class="card shadow p-4 h-100 d-none" style="display: flex; flex-direction: column;">
+                <h2 class="text-center mb-4">Revenue Chart</h2>
+                <p>Expected revenue for each project (in million dollars).</p>
+                <div style="flex: 1; position: relative;">
+                    <canvas id="revenueChart"></canvas>
+                </div>
+            </div>
+
+            <div id="create-employee" class="card shadow p-4 h-100 d-none" style="display: flex; flex-direction: column;">
+                <h2 class="text-center mb-4">Create Employee Account</h2>
+                <div style="flex: 1; overflow-y: auto;">
+                    <form method="post" asp-page-handler="CreateEmployee">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="Email" class="form-control" placeholder="Enter employee email" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" id="password" name="Password" class="form-control" placeholder="Enter password" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="role" class="form-label">Role</label>
+                            <select id="role" name="Role" class="form-select">
+                                <option value="Employee">Employee</option>
+                                <option value="Admin">Admin</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Create Account</button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="manage-departments" class="card shadow p-4 h-100 d-none" style="display: flex; flex-direction: column;">
+                <h2 class="text-center mb-4">Manage Departments</h2>
+                <div style="flex: 1; overflow-y: auto;">
+                    <h4>Create Department</h4>
+                    <form method="post" asp-page-handler="CreateDepartment" class="mb-4">
+                        <div class="mb-3">
+                            <label for="departmentName" class="form-label">Department Name</label>
+                            <input type="text" id="departmentName" name="DepartmentName" class="form-control" placeholder="Enter department name" required />
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Create Department</button>
+                    </form>
+                    <hr>
+                    <h4>Department List</h4>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var dept in Model.Departments)
+                                {
+                                    <tr>
+                                        <td>@dept.Id</td>
+                                        <td>@dept.Name</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="manage-projects" class="card shadow p-4 h-100 d-none" style="display: flex; flex-direction: column;">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="text-center mb-0">Manage Projects</h2>
+                    <button id="add-project-btn" class="btn btn-primary" onclick="toggleAddProjectForm()">Add New Project</button>
+                </div>
+
+                @if (Model.ProjectAssignmentStatus != null)
+                {
+                    <div class="alert @(Model.ProjectAssignmentStatus.RequirementsMet ? "alert-success" : "alert-warning") alert-dismissible fade show" role="alert">
+                        <p><strong>Assignment Status:</strong> @(Model.ProjectAssignmentStatus.RequirementsMet ? "Requirements Met" : "Requirements Not Met")</p>
+                        <p>Assigned Members: @Model.ProjectAssignmentStatus.AssignedMembers / @Model.ProjectAssignmentStatus.RequiredMembers</p>
+                        <p>Freshers: @Model.ProjectAssignmentStatus.AssignedFreshers / @Model.ProjectAssignmentStatus.RequiredFreshers</p>
+                        <p>Juniors: @Model.ProjectAssignmentStatus.AssignedJuniors / @Model.ProjectAssignmentStatus.RequiredJuniors</p>
+                        <p>Mid-levels: @Model.ProjectAssignmentStatus.AssignedMidLevels / @Model.ProjectAssignmentStatus.RequiredMidLevels</p>
+                        <p>Seniors: @Model.ProjectAssignmentStatus.AssignedSeniors / @Model.ProjectAssignmentStatus.RequiredSeniors</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                }
+
+                <!-- Project List (default view) -->
+                <div id="project-list-view" style="flex: 1; overflow-y: auto;">
+                    <h4>Project List</h4>
+                    @if (Model.Projects.Any())
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Name</th>
+                                        <th>Detail</th>
+                                        <th>Due Date</th>
+                                        <th>Required Members</th>
+                                        <th>Freshers</th>
+                                        <th>Juniors</th>
+                                        <th>Mid-levels</th>
+                                        <th>Seniors</th>
+                                        <th>Assigned Employees</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var project in Model.Projects)
+                                    {
+                                        <tr>
+                                            <td>@project.Id</td>
+                                            <td>@project.Name</td>
+                                            <td>@project.Detail</td>
+                                            <td>@project.DueDate.ToString("yyyy-MM-dd")</td>
+                                            <td>@project.RequiredMembers</td>
+                                            <td>@project.RequiredFreshers</td>
+                                            <td>@project.RequiredJuniors</td>
+                                            <td>@project.RequiredMidLevels</td>
+                                            <td>@project.RequiredSeniors</td>
+                                            <td>
+                                                @if (project.AssignedEmployees.Any())
+                                                {
+                                                    <ul>
+                                                        <li><strong>Freshers:</strong> @(project.AssignedEmployees.Where(e => e.Level == "Fresher").Any() ? string.Join(", ", project.AssignedEmployees.Where(e => e.Level == "Fresher").Select(e => e.Name)) : "None")</li>
+                                                        <li><strong>Juniors:</strong> @(project.AssignedEmployees.Where(e => e.Level == "Junior").Any() ? string.Join(", ", project.AssignedEmployees.Where(e => e.Level == "Junior").Select(e => e.Name)) : "None")</li>
+                                                        <li><strong>Mid-levels:</strong> @(project.AssignedEmployees.Where(e => e.Level == "MidLevel").Any() ? string.Join(", ", project.AssignedEmployees.Where(e => e.Level == "MidLevel").Select(e => e.Name)) : "None")</li>
+                                                        <li><strong>Seniors:</strong> @(project.AssignedEmployees.Where(e => e.Level == "Senior").Any() ? string.Join(", ", project.AssignedEmployees.Where(e => e.Level == "Senior").Select(e => e.Name)) : "None")</li>
+                                                    </ul>
+                                                }
+                                                else
+                                                {
+                                                    <span>No employees assigned.</span>
+                                                }
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                    else
+                    {
+                        <p>No projects available.</p>
+                    }
+                </div>
+
+                <!-- Add New Project Form (hidden by default) -->
+                <div id="add-project-form" style="flex: 1; overflow-y: auto; display: none;">
+                    <h4>Add New Project</h4>
+                    <form id="add-project-form-element" method="post" asp-page-handler="CreateProject" class="mb-4">
+                        <div class="mb-3">
+                            <label for="projectName" class="form-label">Project Name</label>
+                            <input type="text" id="projectName" name="ProjectName" class="form-control" placeholder="Enter project name" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="projectDetail" class="form-label">Detail</label>
+                            <textarea id="projectDetail" name="ProjectDetail" class="form-control" placeholder="Enter project details" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="dueDate" class="form-label">Due Date</label>
+                            <input type="date" id="dueDate" name="DueDate" class="form-control" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="requiredMembers" class="form-label">Total Required Members</label>
+                            <input type="number" id="requiredMembers" name="RequiredMembers" class="form-control" min="1" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="requiredFreshers" class="form-label">Required Freshers</label>
+                            <input type="number" id="requiredFreshers" name="RequiredFreshers" class="form-control" min="0" value="0" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="requiredJuniors" class="form-label">Required Juniors</label>
+                            <input type="number" id="requiredJuniors" name="RequiredJuniors" class="form-control" min="0" value="0" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="requiredMidLevels" class="form-label">Required Mid-levels</label>
+                            <input type="number" id="requiredMidLevels" name="RequiredMidLevels" class="form-control" min="0" value="0" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="requiredSeniors" class="form-label">Required Seniors</label>
+                            <input type="number" id="requiredSeniors" name="RequiredSeniors" class="form-control" min="0" value="0" required />
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <button type="submit" class="btn btn-primary">Create Project</button>
+                            <button type="button" class="btn btn-secondary" onclick="toggleAddProjectForm()">Cancel</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </main>
     </div>
 
     <!-- Footer -->
-    <footer class="p-3 text-center m-0">
+    <footer class="p-3 text-center bg-primary text-white">
         <a href="/Contact" class="text-white mx-2">Contact</a>
         <a href="/About" class="text-white mx-2">About Us</a>
         <a href="https://github.com/yourusername" class="text-white mx-2">Profile</a>
     </footer>
 </div>
 
-<script>
-    function showSection(sectionId) {
-        document.querySelectorAll('main > div').forEach(div => div.classList.add('d-none'));
-        document.getElementById(sectionId).classList.remove('d-none');
-        document.getElementById('welcome-section').classList.add('d-none');
+<!-- Include Chart.js via CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+    /* General Styles */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f6f9;
     }
+
+    h1, h2, h4 {
+        color: #333;
+    }
+
+    .card {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+    }
+
+    /* Header and Footer */
+    header, footer {
+        background-color: #007bff !important;
+    }
+
+    /* Sidebar */
+    .bg-dark {
+        background-color: #2c3e50 !important;
+        height: 100%;
+    }
+
+    .sidebar-link {
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s, padding-left 0.3s;
+        position: relative;
+    }
+
+        .sidebar-link:hover {
+            background-color: #34495e;
+            padding-left: 20px;
+        }
+
+        .sidebar-link.active {
+            background-color: #34495e;
+        }
+
+            .sidebar-link.active::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 15px;
+                right: 15px;
+                height: 2px;
+                background-color: #007bff;
+            }
+
+    /* Separator Line */
+    hr {
+        border-color: #dee2e6;
+        margin: 0.5rem 0;
+    }
+
+    /* Tables */
+    .table {
+        margin-bottom: 0;
+    }
+
+        .table th {
+            background-color: #f8f9fa;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+    .table-hover tbody tr:hover {
+        background-color: #f1f3f5;
+    }
+
+    /* Progress Bar */
+    .progress {
+        background-color: #e9ecef;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .progress-bar {
+        transition: width 0.3s ease-in-out;
+    }
+
+    /* Stage Dropdown */
+    .stage-select {
+        max-width: 150px;
+    }
+
+    /* Buttons */
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+        transition: background-color 0.3s;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        border-color: #6c757d;
+        transition: background-color 0.3s;
+    }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+            border-color: #5a6268;
+        }
+
+    /* Alerts (Toasts) */
+    .toast {
+        border-radius: 5px;
+    }
+
+    /* Chart Container */
+    #revenueChart {
+        max-height: 100%;
+        width: 100%;
+    }
+</style>
+
+<script>
+    let currentSection = '@Model.ActiveSection'; // Get the active section from the model
+
+    function showSection(sectionId) {
+        // Hide all sections
+        document.querySelectorAll('main > div').forEach(div => div.classList.add('d-none'));
+
+        // Show the selected section
+        document.getElementById(sectionId).classList.remove('d-none');
+
+        // Update the active sidebar link
+        document.querySelectorAll('.sidebar-link').forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${sectionId}`) {
+                link.classList.add('active');
+            }
+        });
+
+        // Generate random progress for "Project Progress" section if it's being shown
+        if (sectionId === 'project-progress') {
+            generateRandomProgress();
+        }
+
+        // Generate the revenue chart if the "Revenue Chart" section is being shown
+        if (sectionId === 'revenue-chart') {
+            generateRevenueChart();
+        }
+
+        // Update the current section
+        currentSection = sectionId;
+    }
+
+    function toggleAddProjectForm() {
+        const projectListView = document.getElementById('project-list-view');
+        const addProjectForm = document.getElementById('add-project-form');
+        const addProjectBtn = document.getElementById('add-project-btn');
+
+        if (projectListView.style.display === 'none') {
+            projectListView.style.display = 'block';
+            addProjectForm.style.display = 'none';
+            addProjectBtn.textContent = 'Add New Project';
+        } else {
+            projectListView.style.display = 'none';
+            addProjectForm.style.display = 'block';
+            addProjectBtn.textContent = 'Back to Projects';
+            document.getElementById('add-project-form').querySelector('form').reset();
+        }
+    }
+
+    function generateRandomProgress() {
+        const progressBars = document.querySelectorAll('.progress-bar');
+        progressBars.forEach(bar => {
+            const randomProgress = Math.floor(Math.random() * 101); // Random number between 0 and 100
+            bar.style.width = randomProgress + '%';
+            bar.setAttribute('data-progress', randomProgress);
+            bar.querySelector('span').textContent = randomProgress + '%';
+        });
+    }
+
+    function updateStage(selectElement) {
+        // This function is just for UI purposes; no backend update
+        const value = selectElement.value;
+        console.log(`Stage updated to: ${value}`); // For debugging; can be removed
+    }
+
+    function generateRevenueChart() {
+        const ctx = document.getElementById('revenueChart').getContext('2d');
+
+        // Destroy any existing chart to prevent overlap
+        if (window.revenueChart && typeof window.revenueChart.destroy === 'function') {
+            window.revenueChart.destroy();
+        }
+
+        // Get project names from the Model
+        const projectNames = @Json.Serialize(Model.Projects.Select(p => p.Name));
+
+        // Generate random revenue data (in million dollars, between 1 and 10)
+        const revenueData = projectNames.map(() => (Math.random() * 9 + 1).toFixed(2));
+
+        // Create the bar chart
+        window.revenueChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: projectNames,
+                datasets: [{
+                    label: 'Expected Revenue (Million Dollars)',
+                    data: revenueData,
+                    backgroundColor: 'rgba(54, 162, 235, 0.6)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Revenue (Million Dollars)',
+                            font: {
+                                size: 14
+                            }
+                        },
+                        ticks: {
+                            stepSize: 1
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Projects',
+                            font: {
+                                size: 14
+                            }
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'top'
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return `Revenue: ${context.parsed.y} Million Dollars`;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    }
+
+    // Show the correct section and handle notifications on page load
+    document.addEventListener('DOMContentLoaded', () => {
+        // Show the active section based on the model
+        if (currentSection) {
+            showSection(currentSection);
+        }
+
+        // Show success or error toast if there's a message
+        if ('@Model.SuccessMessage' !== '') {
+            const successToast = new bootstrap.Toast(document.getElementById('successToast'));
+            successToast.show();
+
+            // Clear the form if it exists
+            if (currentSection === 'create-employee') {
+                document.querySelector('#create-employee form').reset();
+            } else if (currentSection === 'manage-departments') {
+                document.querySelector('#manage-departments form').reset();
+            } else if (currentSection === 'manage-projects') {
+                document.getElementById('add-project-form-element').reset();
+                // Ensure we're in the project list view after creating a project
+                document.getElementById('project-list-view').style.display = 'block';
+                document.getElementById('add-project-form').style.display = 'none';
+                document.getElementById('add-project-btn').textContent = 'Add New Project';
+            }
+        }
+        if ('@Model.ErrorMessage' !== '') {
+            const errorToast = new bootstrap.Toast(document.getElementById('errorToast'));
+            errorToast.show();
+        }
+    });
 </script>

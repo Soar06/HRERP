@@ -3,7 +3,7 @@ using HR.Infrastructure.Data;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Security.Claims; // Add this for ClaimTypes
+using System.Security.Claims;
 
 namespace HR.API.Controllers;
 
@@ -16,6 +16,26 @@ public class EmployeeController : ControllerBase
     public EmployeeController(AppDbContext context)
     {
         _context = context;
+    }
+
+    [Authorize(Roles = "Admin")]
+    [HttpGet("list")]
+    public async Task<IActionResult> GetEmployeeList()
+    {
+        var employees = await _context.Employees
+            .Include(e => e.Department)
+            .Select(e => new
+            {
+                e.Id,
+                e.Name,
+                e.Email,
+                DepartmentName = e.Department != null ? e.Department.Name : "Not Assigned",
+                e.Level,
+                e.Ratings
+            })
+            .ToListAsync();
+
+        return Ok(employees);
     }
 
     [Authorize(Roles = "Employee")]

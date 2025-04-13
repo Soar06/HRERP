@@ -106,6 +106,21 @@ namespace HR.Infrastructure.Migrations
                     b.ToTable("Employees");
                 });
 
+            modelBuilder.Entity("HR.Core.Entities.EmployeeProject", b =>
+                {
+                    b.Property<int>("EmployeeId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProjectId")
+                        .HasColumnType("int");
+
+                    b.HasKey("EmployeeId", "ProjectId");
+
+                    b.HasIndex("ProjectId");
+
+                    b.ToTable("EmployeeProjects");
+                });
+
             modelBuilder.Entity("HR.Core.Entities.LeaveRequest", b =>
                 {
                     b.Property<int>("Id")
@@ -134,6 +149,45 @@ namespace HR.Infrastructure.Migrations
                     b.HasIndex("EmployeeId");
 
                     b.ToTable("LeaveRequests");
+                });
+
+            modelBuilder.Entity("HR.Core.Entities.Project", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Detail")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("DueDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("RequiredFreshers")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RequiredJuniors")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RequiredMembers")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RequiredMidLevels")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RequiredSeniors")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Projects");
                 });
 
             modelBuilder.Entity("HR.Core.Entities.User", b =>
@@ -165,7 +219,7 @@ namespace HR.Infrastructure.Migrations
                         {
                             Id = 1,
                             Email = "admin@hr.com",
-                            PasswordHash = "$2a$11$UO2Z1x6AcENWptZFo4J.V.JFVKh4Zatf9ncXyQy.FALikCBhsL8Hu",
+                            PasswordHash = "$2a$11$Ln4OI2rhMspkJY6.82NxjO.diG/s/dNTIiEN6CgtgXbl.Wf881wJi",
                             Role = "Admin"
                         });
                 });
@@ -189,6 +243,25 @@ namespace HR.Infrastructure.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("HR.Core.Entities.EmployeeProject", b =>
+                {
+                    b.HasOne("HR.Core.Entities.Employee", "Employee")
+                        .WithMany("EmployeeProjects")
+                        .HasForeignKey("EmployeeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("HR.Core.Entities.Project", "Project")
+                        .WithMany("EmployeeProjects")
+                        .HasForeignKey("ProjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Employee");
+
+                    b.Navigation("Project");
+                });
+
             modelBuilder.Entity("HR.Core.Entities.LeaveRequest", b =>
                 {
                     b.HasOne("HR.Core.Entities.Employee", "Employee")
@@ -207,7 +280,14 @@ namespace HR.Infrastructure.Migrations
 
             modelBuilder.Entity("HR.Core.Entities.Employee", b =>
                 {
+                    b.Navigation("EmployeeProjects");
+
                     b.Navigation("LeaveRequests");
+                });
+
+            modelBuilder.Entity("HR.Core.Entities.Project", b =>
+                {
+                    b.Navigation("EmployeeProjects");
                 });
 
             modelBuilder.Entity("HR.Core.Entities.User", b =>
