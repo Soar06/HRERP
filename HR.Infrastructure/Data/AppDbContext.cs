@@ -27,6 +27,11 @@ public class AppDbContext : DbContext
             .WithMany(e => e.LeaveRequests)
             .HasForeignKey(lr => lr.EmployeeId);
 
+        modelBuilder.Entity<User>()
+            .HasOne(u => u.Employee)
+            .WithOne(e => e.User)
+            .HasForeignKey<Employee>(e => e.UserId);
+
         // Seed admin user
         modelBuilder.Entity<User>().HasData(
             new User
@@ -36,6 +41,13 @@ public class AppDbContext : DbContext
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword("admin123"),
                 Role = "Admin"
             }
+        );
+
+        // Seed departments (if not already present)
+        modelBuilder.Entity<Department>().HasData(
+            new Department { Id = 1, Name = "Engineering" },
+            new Department { Id = 2, Name = "Human Resources" },
+            new Department { Id = 3, Name = "Marketing" }
         );
     }
 }

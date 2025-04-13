@@ -1,12 +1,10 @@
 ﻿@page
 @model HR.Web.Pages.Employee.DashboardModel
 
-
-
-<div class="container-fluid min-vh-100 d-flex flex-column" style="background: linear-gradient(to bottom, purple, red);">
+<div class="container-fluid vh-100 d-flex flex-column" style="background: linear-gradient(to bottom, purple, red);">
     <!-- Header -->
-    <header class="p-3">
-        <h1 class="text-white">HR ERP - Employee Dashboard</h1>
+    <header class="p-3 m-0">
+        <h1 class="text-white m-0">HR ERP - Employee Dashboard</h1>
     </header>
 
     <!-- Main Content with Sidebar -->
@@ -16,13 +14,16 @@
             <h4 class="text-center mb-4">Employee Menu</h4>
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#personal-info" onclick="showSection('personal-info')">Add Personal Info</a>
+                    <a class="nav-link text-white" href="#update-info" onclick="showSection('update-info')">Update Information</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#current-projects" onclick="showSection('current-projects')">Current Projects</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#schedule" onclick="showSection('schedule')">View Schedule</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#manage-department" onclick="showSection('manage-department')">View Departments</a>
                 </li>
                 <li class="nav-item">
                     <form method="post" asp-page-handler="Logout">
@@ -39,25 +40,68 @@
                 <p class="text-center">Select an option from the sidebar to get started.</p>
             </div>
 
-            <div id="personal-info" class="card shadow p-4 d-none">
-                <h2 class="text-center mb-4">Add Personal Information</h2>
+            <div id="update-info" class="card shadow p-4 d-none">
+                <h2 class="text-center mb-4">Update Information</h2>
+                @if (!string.IsNullOrEmpty(Model.SuccessMessage))
+                {
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        @Model.SuccessMessage
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                }
+                @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+                {
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        @Model.ErrorMessage
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                }
                 <form method="post" asp-page-handler="UpdateInfo">
                     <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" id="name" name="Name" class="form-control" placeholder="Enter your name" />
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="Email" class="form-control" value="@Model.UserEmail" readonly />
                     </div>
                     <div class="mb-3">
-                        <label for="phone" class="form-label">Phone</label>
-                        <input type="text" id="phone" name="Phone" class="form-control" placeholder="Enter your phone number" />
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="Name" class="form-control" placeholder="Enter your name" required />
                     </div>
-                    <button type="submit" class="btn btn-primary w-100">Save</button>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="text" id="phone" name="PhoneNumber" class="form-control" placeholder="Enter your phone number" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="age" class="form-label">Age</label>
+                        <input type="number" id="age" name="Age" class="form-control" placeholder="Enter your age" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="contractLink" class="form-label">Contract Link</label>
+                        <input type="url" id="contractLink" name="ContractLink" class="form-control" placeholder="Enter contract link" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="departmentId" class="form-label">Department</label>
+                        <select id="departmentId" name="DepartmentId" class="form-select" required>
+                            @foreach (var dept in Model.Departments)
+                            {
+                                <option value="@dept.Id">@dept.Name</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="level" class="form-label">Level</label>
+                        <select id="level" name="Level" class="form-select" required>
+                            <option value="Fresher">Fresher</option>
+                            <option value="Junior">Junior</option>
+                            <option value="Mid-level">Mid-level</option>
+                            <option value="Senior">Senior</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Submit</button>
                 </form>
             </div>
 
             <div id="current-projects" class="card shadow p-4 d-none">
                 <h2 class="text-center mb-4">Current Projects</h2>
                 <p>Projects you are currently assigned to.</p>
-                <!-- Placeholder for project list -->
                 <table class="table">
                     <thead>
                         <tr>
@@ -72,7 +116,6 @@
                             <td>2025-01-01</td>
                             <td>In Progress</td>
                         </tr>
-                        <!-- Add more rows via API call in a real app -->
                     </tbody>
                 </table>
             </div>
@@ -80,7 +123,6 @@
             <div id="schedule" class="card shadow p-4 d-none">
                 <h2 class="text-center mb-4">Your Schedule</h2>
                 <p>Your upcoming schedule.</p>
-                <!-- Placeholder for schedule -->
                 <table class="table">
                     <thead>
                         <tr>
@@ -95,15 +137,63 @@
                             <td>Team Meeting</td>
                             <td>10:00 AM</td>
                         </tr>
-                        <!-- Add more rows via API call in a real app -->
                     </tbody>
                 </table>
+            </div>
+
+            <div id="manage-department" class="card shadow p-4 d-none">
+                <h2 class="text-center mb-4">View Departments</h2>
+                @if (!string.IsNullOrEmpty(Model.SuccessMessage))
+                {
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        @Model.SuccessMessage
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                }
+                @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+                {
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        @Model.ErrorMessage
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                }
+                <h4>Available Departments</h4>
+                <table class="table mb-4">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var dept in Model.Departments)
+                        {
+                            <tr>
+                                <td>@dept.Id</td>
+                                <td>@dept.Name</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <h4>Request Department Change</h4>
+                <form method="post" asp-page-handler="RequestDepartmentChange">
+                    <div class="mb-3">
+                        <label for="newDepartmentId" class="form-label">New Department</label>
+                        <select id="newDepartmentId" name="NewDepartmentId" class="form-select" required>
+                            @foreach (var dept in Model.Departments)
+                            {
+                                <option value="@dept.Id">@dept.Name</option>
+                            }
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Request Change</button>
+                </form>
             </div>
         </main>
     </div>
 
     <!-- Footer -->
-    <footer class="p-3 text-center">
+    <footer class="p-3 text-center m-0">
         <a href="/Contact" class="text-white mx-2">Contact</a>
         <a href="/About" class="text-white mx-2">About Us</a>
         <a href="https://github.com/yourusername" class="text-white mx-2">Profile</a>
