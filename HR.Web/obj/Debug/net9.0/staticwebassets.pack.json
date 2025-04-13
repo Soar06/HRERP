@@ -801,6 +801,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
     },
     {
+      "Id": "D:\\.Net\\HRERP\\HR.Web\\wwwroot\\video\\star-guardian-2022.mp4",
+      "PackagePath": "staticwebassets\\video\\star-guardian-2022.mp4"
+    },
+    {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.HR.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

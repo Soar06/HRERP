@@ -16,4 +16,8 @@
 		<ProjectReference Include="..\HR.API\HR.API.csproj" />
 		<ProjectReference Include="..\HR.Core\HR.Core.csproj" />
 	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="wwwroot\video\star-guardian-2022.mp4" />
+	</ItemGroup>
 </Project>

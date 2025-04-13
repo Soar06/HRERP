@@ -39513,6 +39513,88 @@
           "Value": "lib/jquery/dist/jquery.slim.min.js.gz"
         }
       ]
+    },
+    {
+      "Route": "video/star-guardian-2022.2eljdeyadi.mp4",
+      "AssetFile": "video/star-guardian-2022.mp4",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3802783"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/mp4"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CrgD2XDizJscUBWyYqHWZzZYqkz/y8Ju4do3KPj+EBg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 19:16:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2eljdeyadi"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CrgD2XDizJscUBWyYqHWZzZYqkz/y8Ju4do3KPj+EBg="
+        },
+        {
+          "Name": "label",
+          "Value": "video/star-guardian-2022.mp4"
+        }
+      ]
+    },
+    {
+      "Route": "video/star-guardian-2022.mp4",
+      "AssetFile": "video/star-guardian-2022.mp4",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3802783"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/mp4"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CrgD2XDizJscUBWyYqHWZzZYqkz/y8Ju4do3KPj+EBg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 19:16:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CrgD2XDizJscUBWyYqHWZzZYqkz/y8Ju4do3KPj+EBg="
+        }
+      ]
     }
   ]
 }

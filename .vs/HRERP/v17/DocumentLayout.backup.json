@@ -3,44 +3,24 @@
   "WorkspaceRootPath": "D:\\.Net\\HRERP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2BC66AED-4CE8-431F-9FC8-EE4566CF10D3}|HR.Web\\HR.Web.csproj|d:\\.net\\hrerp\\hr.web\\pages\\employee\\dashboard.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BC66AED-4CE8-431F-9FC8-EE4566CF10D3}|HR.Web\\HR.Web.csproj|solutionrelative:hr.web\\pages\\employee\\dashboard.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60C6DC7C-70B5-45A9-AEBA-EB16C2772702}|HR.API\\HR.API.csproj|d:\\.net\\hrerp\\hr.api\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60C6DC7C-70B5-45A9-AEBA-EB16C2772702}|HR.API\\HR.API.csproj|solutionrelative:hr.api\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60C6DC7C-70B5-45A9-AEBA-EB16C2772702}|HR.API\\HR.API.csproj|d:\\.net\\hrerp\\hr.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60C6DC7C-70B5-45A9-AEBA-EB16C2772702}|HR.API\\HR.API.csproj|solutionrelative:hr.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BC66AED-4CE8-431F-9FC8-EE4566CF10D3}|HR.Web\\HR.Web.csproj|d:\\.net\\hrerp\\hr.web\\pages\\employee\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2BC66AED-4CE8-431F-9FC8-EE4566CF10D3}|HR.Web\\HR.Web.csproj|solutionrelative:hr.web\\pages\\employee\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88FB1145-43C7-4C77-A0D8-18501C2181CC}|HR.Core\\HR.Core.csproj|d:\\.net\\hrerp\\hr.core\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88FB1145-43C7-4C77-A0D8-18501C2181CC}|HR.Core\\HR.Core.csproj|solutionrelative:hr.core\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88FB1145-43C7-4C77-A0D8-18501C2181CC}|HR.Core\\HR.Core.csproj|d:\\.net\\hrerp\\hr.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88FB1145-43C7-4C77-A0D8-18501C2181CC}|HR.Core\\HR.Core.csproj|solutionrelative:hr.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60C6DC7C-70B5-45A9-AEBA-EB16C2772702}|HR.API\\HR.API.csproj|d:\\.net\\hrerp\\hr.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{60C6DC7C-70B5-45A9-AEBA-EB16C2772702}|HR.API\\HR.API.csproj|solutionrelative:hr.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60C6DC7C-70B5-45A9-AEBA-EB16C2772702}|HR.API\\HR.API.csproj|d:\\.net\\hrerp\\hr.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60C6DC7C-70B5-45A9-AEBA-EB16C2772702}|HR.API\\HR.API.csproj|solutionrelative:hr.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2BC66AED-4CE8-431F-9FC8-EE4566CF10D3}|HR.Web\\HR.Web.csproj|d:\\.net\\hrerp\\hr.web\\pages\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2BC66AED-4CE8-431F-9FC8-EE4566CF10D3}|HR.Web\\HR.Web.csproj|solutionrelative:hr.web\\pages\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2BC66AED-4CE8-431F-9FC8-EE4566CF10D3}|HR.Web\\HR.Web.csproj|d:\\.net\\hrerp\\hr.web\\pages\\admin\\dashboard.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BC66AED-4CE8-431F-9FC8-EE4566CF10D3}|HR.Web\\HR.Web.csproj|solutionrelative:hr.web\\pages\\admin\\dashboard.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C6DC7C-70B5-45A9-AEBA-EB16C2772702}|HR.API\\HR.API.csproj|d:\\.net\\hrerp\\hr.api\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60C6DC7C-70B5-45A9-AEBA-EB16C2772702}|HR.API\\HR.API.csproj|solutionrelative:hr.api\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B21F914-9CDA-46E6-8319-8C7497EA43AF}|HR.Infrastructure\\HR.Infrastructure.csproj|d:\\.net\\hrerp\\hr.infrastructure\\migrations\\20250413172358_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B21F914-9CDA-46E6-8319-8C7497EA43AF}|HR.Infrastructure\\HR.Infrastructure.csproj|solutionrelative:hr.infrastructure\\migrations\\20250413172358_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B21F914-9CDA-46E6-8319-8C7497EA43AF}|HR.Infrastructure\\HR.Infrastructure.csproj|d:\\.net\\hrerp\\hr.infrastructure\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B21F914-9CDA-46E6-8319-8C7497EA43AF}|HR.Infrastructure\\HR.Infrastructure.csproj|solutionrelative:hr.infrastructure\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B21F914-9CDA-46E6-8319-8C7497EA43AF}|HR.Infrastructure\\HR.Infrastructure.csproj|d:\\.net\\hrerp\\hr.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,12 +31,56 @@
       "RelativeMoniker": "D:0:0:{88FB1145-43C7-4C77-A0D8-18501C2181CC}|HR.Core\\HR.Core.csproj|solutionrelative:hr.core\\entities\\leaverequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{60C6DC7C-70B5-45A9-AEBA-EB16C2772702}|HR.API\\HR.API.csproj|d:\\.net\\hrerp\\hr.api\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60C6DC7C-70B5-45A9-AEBA-EB16C2772702}|HR.API\\HR.API.csproj|solutionrelative:hr.api\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88FB1145-43C7-4C77-A0D8-18501C2181CC}|HR.Core\\HR.Core.csproj|d:\\.net\\hrerp\\hr.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88FB1145-43C7-4C77-A0D8-18501C2181CC}|HR.Core\\HR.Core.csproj|solutionrelative:hr.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88FB1145-43C7-4C77-A0D8-18501C2181CC}|HR.Core\\HR.Core.csproj|d:\\.net\\hrerp\\hr.core\\entities\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88FB1145-43C7-4C77-A0D8-18501C2181CC}|HR.Core\\HR.Core.csproj|solutionrelative:hr.core\\entities\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88FB1145-43C7-4C77-A0D8-18501C2181CC}|HR.Core\\HR.Core.csproj|d:\\.net\\hrerp\\hr.core\\entities\\employeeproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88FB1145-43C7-4C77-A0D8-18501C2181CC}|HR.Core\\HR.Core.csproj|solutionrelative:hr.core\\entities\\employeeproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88FB1145-43C7-4C77-A0D8-18501C2181CC}|HR.Core\\HR.Core.csproj|d:\\.net\\hrerp\\hr.core\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88FB1145-43C7-4C77-A0D8-18501C2181CC}|HR.Core\\HR.Core.csproj|solutionrelative:hr.core\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88FB1145-43C7-4C77-A0D8-18501C2181CC}|HR.Core\\HR.Core.csproj|d:\\.net\\hrerp\\hr.core\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88FB1145-43C7-4C77-A0D8-18501C2181CC}|HR.Core\\HR.Core.csproj|solutionrelative:hr.core\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88FB1145-43C7-4C77-A0D8-18501C2181CC}|HR.Core\\HR.Core.csproj|d:\\.net\\hrerp\\hr.core\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88FB1145-43C7-4C77-A0D8-18501C2181CC}|HR.Core\\HR.Core.csproj|solutionrelative:hr.core\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C6DC7C-70B5-45A9-AEBA-EB16C2772702}|HR.API\\HR.API.csproj|d:\\.net\\hrerp\\hr.api\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60C6DC7C-70B5-45A9-AEBA-EB16C2772702}|HR.API\\HR.API.csproj|solutionrelative:hr.api\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BC66AED-4CE8-431F-9FC8-EE4566CF10D3}|HR.Web\\HR.Web.csproj|d:\\.net\\hrerp\\hr.web\\pages\\employee\\dashboard.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BC66AED-4CE8-431F-9FC8-EE4566CF10D3}|HR.Web\\HR.Web.csproj|solutionrelative:hr.web\\pages\\employee\\dashboard.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C6DC7C-70B5-45A9-AEBA-EB16C2772702}|HR.API\\HR.API.csproj|d:\\.net\\hrerp\\hr.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60C6DC7C-70B5-45A9-AEBA-EB16C2772702}|HR.API\\HR.API.csproj|solutionrelative:hr.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BC66AED-4CE8-431F-9FC8-EE4566CF10D3}|HR.Web\\HR.Web.csproj|d:\\.net\\hrerp\\hr.web\\pages\\employee\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2BC66AED-4CE8-431F-9FC8-EE4566CF10D3}|HR.Web\\HR.Web.csproj|solutionrelative:hr.web\\pages\\employee\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C6DC7C-70B5-45A9-AEBA-EB16C2772702}|HR.API\\HR.API.csproj|d:\\.net\\hrerp\\hr.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{60C6DC7C-70B5-45A9-AEBA-EB16C2772702}|HR.API\\HR.API.csproj|solutionrelative:hr.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C6DC7C-70B5-45A9-AEBA-EB16C2772702}|HR.API\\HR.API.csproj|d:\\.net\\hrerp\\hr.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60C6DC7C-70B5-45A9-AEBA-EB16C2772702}|HR.API\\HR.API.csproj|solutionrelative:hr.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C6DC7C-70B5-45A9-AEBA-EB16C2772702}|HR.API\\HR.API.csproj|d:\\.net\\hrerp\\hr.api\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60C6DC7C-70B5-45A9-AEBA-EB16C2772702}|HR.API\\HR.API.csproj|solutionrelative:hr.api\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{60C6DC7C-70B5-45A9-AEBA-EB16C2772702}|HR.API\\HR.API.csproj|d:\\.net\\hrerp\\hr.api\\controllers\\leaverequestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -143,10 +167,6 @@
       "RelativeMoniker": "D:0:0:{88FB1145-43C7-4C77-A0D8-18501C2181CC}|HR.Core\\HR.Core.csproj|solutionrelative:hr.core\\interfaces\\ijwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88FB1145-43C7-4C77-A0D8-18501C2181CC}|HR.Core\\HR.Core.csproj|d:\\.net\\hrerp\\hr.core\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88FB1145-43C7-4C77-A0D8-18501C2181CC}|HR.Core\\HR.Core.csproj|solutionrelative:hr.core\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1B21F914-9CDA-46E6-8319-8C7497EA43AF}|HR.Infrastructure\\HR.Infrastructure.csproj|d:\\.net\\hrerp\\hr.infrastructure\\repositories\\leaverequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B21F914-9CDA-46E6-8319-8C7497EA43AF}|HR.Infrastructure\\HR.Infrastructure.csproj|solutionrelative:hr.infrastructure\\repositories\\leaverequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -157,10 +177,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1B21F914-9CDA-46E6-8319-8C7497EA43AF}|HR.Infrastructure\\HR.Infrastructure.csproj|d:\\.net\\hrerp\\hr.infrastructure\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B21F914-9CDA-46E6-8319-8C7497EA43AF}|HR.Infrastructure\\HR.Infrastructure.csproj|solutionrelative:hr.infrastructure\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B21F914-9CDA-46E6-8319-8C7497EA43AF}|HR.Infrastructure\\HR.Infrastructure.csproj|d:\\.net\\hrerp\\hr.infrastructure\\migrations\\20250327092027_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B21F914-9CDA-46E6-8319-8C7497EA43AF}|HR.Infrastructure\\HR.Infrastructure.csproj|solutionrelative:hr.infrastructure\\migrations\\20250327092027_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88FB1145-43C7-4C77-A0D8-18501C2181CC}|HR.Core\\HR.Core.csproj|d:\\.net\\hrerp\\hr.core\\services\\leaverequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -230,41 +246,158 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20250413172358_InitialCreate.cs",
+              "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Infrastructure\\Migrations\\20250413172358_InitialCreate.cs",
+              "RelativeDocumentMoniker": "HR.Infrastructure\\Migrations\\20250413172358_InitialCreate.cs",
+              "ToolTip": "D:\\.Net\\HRERP\\HR.Infrastructure\\Migrations\\20250413172358_InitialCreate.cs",
+              "RelativeToolTip": "HR.Infrastructure\\Migrations\\20250413172358_InitialCreate.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAcwNMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T17:28:19.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Infrastructure\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "HR.Infrastructure\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "D:\\.Net\\HRERP\\HR.Infrastructure\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeToolTip": "HR.Infrastructure\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T17:15:46.921Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{66f449b5-c823-40bc-9016-02b4d06a1a8e}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Dashboard.cshtml",
-              "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Web\\Pages\\Employee\\Dashboard.cshtml",
-              "RelativeDocumentMoniker": "HR.Web\\Pages\\Employee\\Dashboard.cshtml",
-              "ToolTip": "D:\\.Net\\HRERP\\HR.Web\\Pages\\Employee\\Dashboard.cshtml",
-              "RelativeToolTip": "HR.Web\\Pages\\Employee\\Dashboard.cshtml",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAqwNAAAAAJAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Web\\Pages\\Admin\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "HR.Web\\Pages\\Admin\\Dashboard.cshtml",
+              "ToolTip": "D:\\.Net\\HRERP\\HR.Web\\Pages\\Admin\\Dashboard.cshtml",
+              "RelativeToolTip": "HR.Web\\Pages\\Admin\\Dashboard.cshtml",
+              "ViewState": "AgIAAHACAAAAAAAAAAAYwHkCAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-12T16:47:51.247Z",
+              "WhenOpened": "2025-04-12T16:46:37.786Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\.Net\\HRERP\\HR.API\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "HR.API\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\.Net\\HRERP\\HR.API\\Properties\\launchSettings.json",
-              "RelativeToolTip": "HR.API\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-12T15:02:47.626Z",
+              "DocumentIndex": 1,
+              "Title": "Dashboard.cshtml.cs",
+              "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Web\\Pages\\Admin\\Dashboard.cshtml.cs",
+              "RelativeDocumentMoniker": "HR.Web\\Pages\\Admin\\Dashboard.cshtml.cs",
+              "ToolTip": "D:\\.Net\\HRERP\\HR.Web\\Pages\\Admin\\Dashboard.cshtml.cs",
+              "RelativeToolTip": "HR.Web\\Pages\\Admin\\Dashboard.cshtml.cs",
+              "ViewState": "AgIAAB8BAAAAAAAAAAA2wD8BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T16:46:48.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProjectController.cs",
+              "DocumentMoniker": "D:\\.Net\\HRERP\\HR.API\\Controllers\\ProjectController.cs",
+              "RelativeDocumentMoniker": "HR.API\\Controllers\\ProjectController.cs",
+              "ToolTip": "D:\\.Net\\HRERP\\HR.API\\Controllers\\ProjectController.cs",
+              "RelativeToolTip": "HR.API\\Controllers\\ProjectController.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAqwN0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T16:30:50.271Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "HR.Infrastructure\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\.Net\\HRERP\\HR.Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "HR.Infrastructure\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAqwDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T05:43:20.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Project.cs",
+              "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Core\\Entities\\Project.cs",
+              "RelativeDocumentMoniker": "HR.Core\\Entities\\Project.cs",
+              "ToolTip": "D:\\.Net\\HRERP\\HR.Core\\Entities\\Project.cs",
+              "RelativeToolTip": "HR.Core\\Entities\\Project.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T16:23:56.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EmployeeProject.cs",
+              "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Core\\Entities\\EmployeeProject.cs",
+              "RelativeDocumentMoniker": "HR.Core\\Entities\\EmployeeProject.cs",
+              "ToolTip": "D:\\.Net\\HRERP\\HR.Core\\Entities\\EmployeeProject.cs",
+              "RelativeToolTip": "HR.Core\\Entities\\EmployeeProject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T16:24:43.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Core\\Entities\\Employee.cs",
+              "RelativeDocumentMoniker": "HR.Core\\Entities\\Employee.cs",
+              "ToolTip": "D:\\.Net\\HRERP\\HR.Core\\Entities\\Employee.cs",
+              "RelativeToolTip": "HR.Core\\Entities\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T05:36:52.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Department.cs",
+              "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Core\\Entities\\Department.cs",
+              "RelativeDocumentMoniker": "HR.Core\\Entities\\Department.cs",
+              "ToolTip": "D:\\.Net\\HRERP\\HR.Core\\Entities\\Department.cs",
+              "RelativeToolTip": "HR.Core\\Entities\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T05:36:48.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LeaveRequest.cs",
+              "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Core\\Entities\\LeaveRequest.cs",
+              "RelativeDocumentMoniker": "HR.Core\\Entities\\LeaveRequest.cs",
+              "ToolTip": "D:\\.Net\\HRERP\\HR.Core\\Entities\\LeaveRequest.cs",
+              "RelativeToolTip": "HR.Core\\Entities\\LeaveRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T05:36:50.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Core\\Entities\\User.cs",
               "RelativeDocumentMoniker": "HR.Core\\Entities\\User.cs",
@@ -277,46 +410,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Core\\Entities\\Employee.cs",
-              "RelativeDocumentMoniker": "HR.Core\\Entities\\Employee.cs",
-              "ToolTip": "D:\\.Net\\HRERP\\HR.Core\\Entities\\Employee.cs",
-              "RelativeToolTip": "HR.Core\\Entities\\Employee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAyAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Core\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "HR.Core\\Interfaces\\IAuthService.cs",
+              "ToolTip": "D:\\.Net\\HRERP\\HR.Core\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "HR.Core\\Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T05:36:52.504Z",
+              "WhenOpened": "2025-04-04T05:37:01.327Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 13,
               "Title": "EmployeesController.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.API\\Controllers\\EmployeesController.cs",
               "RelativeDocumentMoniker": "HR.API\\Controllers\\EmployeesController.cs",
               "ToolTip": "D:\\.Net\\HRERP\\HR.API\\Controllers\\EmployeesController.cs",
               "RelativeToolTip": "HR.API\\Controllers\\EmployeesController.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAowF0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAwIEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-12T09:55:25.162Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 14,
               "Title": "Dashboard.cshtml.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Web\\Pages\\Employee\\Dashboard.cshtml.cs",
               "RelativeDocumentMoniker": "HR.Web\\Pages\\Employee\\Dashboard.cshtml.cs",
               "ToolTip": "D:\\.Net\\HRERP\\HR.Web\\Pages\\Employee\\Dashboard.cshtml.cs",
               "RelativeToolTip": "HR.Web\\Pages\\Employee\\Dashboard.cshtml.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAgwA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAkwA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-12T16:48:00.897Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 15,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "HR.API\\Controllers\\AuthController.cs",
@@ -324,12 +457,35 @@
               "RelativeToolTip": "HR.API\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwCQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T05:45:37.639Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T05:45:37.639Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 17,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\.Net\\HRERP\\HR.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "HR.API\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\.Net\\HRERP\\HR.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "HR.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-12T15:02:47.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Web\\Pages\\Employee\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "HR.Web\\Pages\\Employee\\Dashboard.cshtml",
+              "ToolTip": "D:\\.Net\\HRERP\\HR.Web\\Pages\\Employee\\Dashboard.cshtml",
+              "RelativeToolTip": "HR.Web\\Pages\\Employee\\Dashboard.cshtml",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAqwNAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-12T16:47:51.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.API\\Program.cs",
               "RelativeDocumentMoniker": "HR.API\\Program.cs",
@@ -337,60 +493,11 @@
               "RelativeToolTip": "HR.API\\Program.cs",
               "ViewState": "AgIAAEMAAAAAAAAAAAAuwFcAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T08:30:02.871Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-30T08:30:02.871Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Infrastructure\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "HR.Infrastructure\\Data\\AppDbContext.cs",
-              "ToolTip": "D:\\.Net\\HRERP\\HR.Infrastructure\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "HR.Infrastructure\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAswCYAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T05:43:20.952Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Dashboard.cshtml.cs",
-              "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Web\\Pages\\Admin\\Dashboard.cshtml.cs",
-              "RelativeDocumentMoniker": "HR.Web\\Pages\\Admin\\Dashboard.cshtml.cs",
-              "ToolTip": "D:\\.Net\\HRERP\\HR.Web\\Pages\\Admin\\Dashboard.cshtml.cs",
-              "RelativeToolTip": "HR.Web\\Pages\\Admin\\Dashboard.cshtml.cs",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAuwJIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T16:46:48.638Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Dashboard.cshtml",
-              "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Web\\Pages\\Admin\\Dashboard.cshtml",
-              "RelativeDocumentMoniker": "HR.Web\\Pages\\Admin\\Dashboard.cshtml",
-              "ToolTip": "D:\\.Net\\HRERP\\HR.Web\\Pages\\Admin\\Dashboard.cshtml",
-              "RelativeToolTip": "HR.Web\\Pages\\Admin\\Dashboard.cshtml",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAuwKsAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-12T16:46:37.786Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "LeaveRequest.cs",
-              "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Core\\Entities\\LeaveRequest.cs",
-              "RelativeDocumentMoniker": "HR.Core\\Entities\\LeaveRequest.cs",
-              "ToolTip": "D:\\.Net\\HRERP\\HR.Core\\Entities\\LeaveRequest.cs",
-              "RelativeToolTip": "HR.Core\\Entities\\LeaveRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T05:36:50.605Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "DepartmentsController.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.API\\Controllers\\DepartmentsController.cs",
               "RelativeDocumentMoniker": "HR.API\\Controllers\\DepartmentsController.cs",
@@ -402,19 +509,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Department.cs",
-              "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Core\\Entities\\Department.cs",
-              "RelativeDocumentMoniker": "HR.Core\\Entities\\Department.cs",
-              "ToolTip": "D:\\.Net\\HRERP\\HR.Core\\Entities\\Department.cs",
-              "RelativeToolTip": "HR.Core\\Entities\\Department.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T05:36:48.955Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "LeaveRequestsController.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.API\\Controllers\\LeaveRequestsController.cs",
               "RelativeDocumentMoniker": "HR.API\\Controllers\\LeaveRequestsController.cs",
@@ -426,7 +521,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "CreateEmployeeDto.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Core\\DTOs\\EmployeeDTOs\\CreateEmployeeDto.cs",
               "RelativeDocumentMoniker": "HR.Core\\DTOs\\EmployeeDTOs\\CreateEmployeeDto.cs",
@@ -438,7 +533,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Core\\DTOs\\AuthDTOs\\LoginRequest.cs",
               "RelativeDocumentMoniker": "HR.Core\\DTOs\\AuthDTOs\\LoginRequest.cs",
@@ -450,7 +545,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "Login.cshtml",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Web\\Pages\\Auth\\Login.cshtml",
               "RelativeDocumentMoniker": "HR.Web\\Pages\\Auth\\Login.cshtml",
@@ -462,7 +557,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 24,
               "Title": "Login.cshtml.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Web\\Pages\\Auth\\Login.cshtml.cs",
               "RelativeDocumentMoniker": "HR.Web\\Pages\\Auth\\Login.cshtml.cs",
@@ -474,7 +569,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Web\\Pages\\_Layout.cshtml",
               "RelativeDocumentMoniker": "HR.Web\\Pages\\_Layout.cshtml",
@@ -486,7 +581,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Web\\Pages\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "HR.Web\\Pages\\Shared\\_Layout.cshtml",
@@ -498,7 +593,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Web\\MappingProfile.cs",
               "RelativeDocumentMoniker": "HR.Web\\MappingProfile.cs",
@@ -510,7 +605,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "About.cshtml",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Web\\Pages\\About.cshtml",
               "RelativeDocumentMoniker": "HR.Web\\Pages\\About.cshtml",
@@ -522,7 +617,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "Contact.cshtml",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Web\\Pages\\Contact.cshtml",
               "RelativeDocumentMoniker": "HR.Web\\Pages\\Contact.cshtml",
@@ -534,7 +629,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 30,
               "Title": "About.cshtml.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Web\\Pages\\About.cshtml.cs",
               "RelativeDocumentMoniker": "HR.Web\\Pages\\About.cshtml.cs",
@@ -546,7 +641,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 31,
               "Title": "Contact.cshtml.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Web\\Pages\\Contact.cshtml.cs",
               "RelativeDocumentMoniker": "HR.Web\\Pages\\Contact.cshtml.cs",
@@ -558,7 +653,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 33,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Web\\Pages\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "HR.Web\\Pages\\Index.cshtml.cs",
@@ -570,7 +665,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 32,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Web\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "HR.Web\\Pages\\Index.cshtml",
@@ -582,7 +677,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 37,
               "Title": "Register.cshtml",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Web\\Pages\\Auth\\Register.cshtml",
               "RelativeDocumentMoniker": "HR.Web\\Pages\\Auth\\Register.cshtml",
@@ -594,7 +689,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 34,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Web\\Program.cs",
               "RelativeDocumentMoniker": "HR.Web\\Program.cs",
@@ -606,7 +701,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 36,
               "Title": "Register.cshtml.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Web\\Pages\\Auth\\Register.cshtml.cs",
               "RelativeDocumentMoniker": "HR.Web\\Pages\\Auth\\Register.cshtml.cs",
@@ -618,7 +713,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 35,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Web\\appsettings.json",
               "RelativeDocumentMoniker": "HR.Web\\appsettings.json",
@@ -630,7 +725,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 38,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Infrastructure\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "HR.Infrastructure\\Repositories\\UserRepository.cs",
@@ -642,7 +737,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 39,
               "Title": "JwtTokenService.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.API\\Services\\JwtTokenService.cs",
               "RelativeDocumentMoniker": "HR.API\\Services\\JwtTokenService.cs",
@@ -654,7 +749,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 41,
               "Title": "LeaveRequestRepository.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Infrastructure\\Repositories\\LeaveRequestRepository.cs",
               "RelativeDocumentMoniker": "HR.Infrastructure\\Repositories\\LeaveRequestRepository.cs",
@@ -666,19 +761,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "IAuthService.cs",
-              "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Core\\Interfaces\\IAuthService.cs",
-              "RelativeDocumentMoniker": "HR.Core\\Interfaces\\IAuthService.cs",
-              "ToolTip": "D:\\.Net\\HRERP\\HR.Core\\Interfaces\\IAuthService.cs",
-              "RelativeToolTip": "HR.Core\\Interfaces\\IAuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T05:37:01.327Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 40,
               "Title": "IJwtTokenService.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Core\\Interfaces\\IJwtTokenService.cs",
               "RelativeDocumentMoniker": "HR.Core\\Interfaces\\IJwtTokenService.cs",
@@ -690,7 +773,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 42,
               "Title": "EmployeeRepository.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Infrastructure\\Repositories\\EmployeeRepository.cs",
               "RelativeDocumentMoniker": "HR.Infrastructure\\Repositories\\EmployeeRepository.cs",
@@ -702,7 +785,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 43,
               "Title": "DepartmentRepository.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Infrastructure\\Repositories\\DepartmentRepository.cs",
               "RelativeDocumentMoniker": "HR.Infrastructure\\Repositories\\DepartmentRepository.cs",
@@ -714,19 +797,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "20250327092027_InitialCreate.cs",
-              "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Infrastructure\\Migrations\\20250327092027_InitialCreate.cs",
-              "RelativeDocumentMoniker": "HR.Infrastructure\\Migrations\\20250327092027_InitialCreate.cs",
-              "ToolTip": "D:\\.Net\\HRERP\\HR.Infrastructure\\Migrations\\20250327092027_InitialCreate.cs",
-              "RelativeToolTip": "HR.Infrastructure\\Migrations\\20250327092027_InitialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T05:43:22.28Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 45,
               "Title": "EmployeeService.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Core\\Services\\EmployeeService.cs",
               "RelativeDocumentMoniker": "HR.Core\\Services\\EmployeeService.cs",
@@ -738,7 +809,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 46,
               "Title": "DepartmentService.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Core\\Services\\DepartmentService.cs",
               "RelativeDocumentMoniker": "HR.Core\\Services\\DepartmentService.cs",
@@ -750,7 +821,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 47,
               "Title": "AuthService.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Core\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "HR.Core\\Services\\AuthService.cs",
@@ -762,7 +833,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 48,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Core\\Interfaces\\IUserRepository.cs",
               "RelativeDocumentMoniker": "HR.Core\\Interfaces\\IUserRepository.cs",
@@ -774,7 +845,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 49,
               "Title": "ILeaveRequestService.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Core\\Interfaces\\ILeaveRequestService.cs",
               "RelativeDocumentMoniker": "HR.Core\\Interfaces\\ILeaveRequestService.cs",
@@ -786,7 +857,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 44,
               "Title": "LeaveRequestService.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Core\\Services\\LeaveRequestService.cs",
               "RelativeDocumentMoniker": "HR.Core\\Services\\LeaveRequestService.cs",
@@ -798,7 +869,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 50,
               "Title": "INotificationService.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Core\\Interfaces\\INotificationService.cs",
               "RelativeDocumentMoniker": "HR.Core\\Interfaces\\INotificationService.cs",
@@ -810,7 +881,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 51,
               "Title": "IEmployeeService.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Core\\Interfaces\\IEmployeeService.cs",
               "RelativeDocumentMoniker": "HR.Core\\Interfaces\\IEmployeeService.cs",
@@ -822,7 +893,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 52,
               "Title": "IEmployeeRepository.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Core\\Interfaces\\IEmployeeRepository.cs",
               "RelativeDocumentMoniker": "HR.Core\\Interfaces\\IEmployeeRepository.cs",
@@ -834,7 +905,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 53,
               "Title": "IDepartmentService.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Core\\Interfaces\\IDepartmentService.cs",
               "RelativeDocumentMoniker": "HR.Core\\Interfaces\\IDepartmentService.cs",
@@ -846,7 +917,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 54,
               "Title": "IDepartmentRepository.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Core\\Interfaces\\IDepartmentRepository.cs",
               "RelativeDocumentMoniker": "HR.Core\\Interfaces\\IDepartmentRepository.cs",
@@ -858,7 +929,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 55,
               "Title": "EmployeeResponseDto.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Core\\DTOs\\EmployeeDTOs\\EmployeeResponseDto.cs",
               "RelativeDocumentMoniker": "HR.Core\\DTOs\\EmployeeDTOs\\EmployeeResponseDto.cs",
@@ -870,7 +941,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 56,
               "Title": "LeaveRequestResponseDto.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Core\\DTOs\\LeaveRequestDTOs\\LeaveRequestResponseDto.cs",
               "RelativeDocumentMoniker": "HR.Core\\DTOs\\LeaveRequestDTOs\\LeaveRequestResponseDto.cs",
@@ -882,7 +953,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 57,
               "Title": "CreateLeaveRequestDto.cs",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.Core\\DTOs\\LeaveRequestDTOs\\CreateLeaveRequestDto.cs",
               "RelativeDocumentMoniker": "HR.Core\\DTOs\\LeaveRequestDTOs\\CreateLeaveRequestDto.cs",
@@ -894,7 +965,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 58,
               "Title": "HR.API.csproj",
               "DocumentMoniker": "D:\\.Net\\HRERP\\HR.API\\HR.API.csproj",
               "RelativeDocumentMoniker": "HR.API\\HR.API.csproj",

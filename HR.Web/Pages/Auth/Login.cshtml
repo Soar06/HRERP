@@ -1,10 +1,19 @@
 ﻿@page
 @model HR.Web.Pages.Auth.LoginModel
 
-<div class="container-fluid min-vh-100 d-flex flex-column" style="background: linear-gradient(to bottom, purple, red);">
+<div class="container-fluid min-vh-100 d-flex flex-column position-relative">
+    <!-- Video Background -->
+    <video autoplay muted loop playsinline class="background-video">
+        <source src="/video/star-guardian-2022.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay for Readability -->
+    <div class="video-overlay"></div>
+
     <!-- Header -->
-    <header class="p-3">
-        <h1 class="text-white">HR ERP</h1>
+    <header class="p-3 text-white">
+        <h1>HR ERP</h1>
     </header>
 
     <!-- Main Content: Login Form -->
@@ -48,9 +57,91 @@
     </main>
 
     <!-- Footer -->
-    <footer class="p-3 text-center">
+    <footer class="p-3 text-center text-white">
         <a href="/Contact" class="text-white mx-2">Contact</a>
         <a href="/About" class="text-white mx-2">About Us</a>
         <a href="https://github.com/yourusername" class="text-white mx-2">Profile</a>
     </footer>
 </div>
+
+<style>
+    /* General Styles */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: transparent;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    h1, h2 {
+        color: #333;
+    }
+
+    .card {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: rgba(255, 255, 255, 0.75);
+    }
+
+    /* Video Background */
+    .background-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    /* Overlay for Readability */
+    .video-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: -1;
+    }
+
+    /* Header and Footer */
+    header {
+        background: linear-gradient(90deg, rgba(106, 183, 245, 0.75), rgba(245, 169, 208, 0.75)) !important; /* Blue-to-pink gradient with transparency */
+        position: relative; /* Ensure header/footer are above the video */
+    }
+
+    footer {
+        background: linear-gradient(90deg, rgba(245, 169, 208, 0.75), rgba(106, 183, 245, 0.75)) !important; /* Blue-to-pink gradient with transparency */
+        position: relative; /* Ensure header/footer are above the video */
+    }
+
+    /* Form Inputs */
+    .form-control {
+        background-color: rgba(255, 255, 255, 0.75);
+        border-color: #ced4da;
+    }
+
+    /* Button */
+    .btn-primary {
+        background: linear-gradient(90deg, rgba(106, 183, 245, 0.75), rgba(245, 169, 208, 0.75));
+        border: none;
+        transition: background 0.3s;
+    }
+
+        .btn-primary:hover {
+            background: linear-gradient(90deg, rgba(106, 183, 245, 0.9), rgba(245, 169, 208, 0.9));
+        }
+
+    /* Alerts */
+    .alert-success {
+        background: linear-gradient(90deg, rgba(106, 183, 245, 0.75), rgba(245, 169, 208, 0.75));
+        color: #333;
+    }
+
+    .alert-danger {
+        background: linear-gradient(90deg, rgba(245, 169, 208, 0.75), rgba(106, 183, 245, 0.75));
+        color: #333;
+    }
+</style>

@@ -1,10 +1,19 @@
 ﻿@page
 @model HR.Web.Pages.Employee.DashboardModel
 
-<div class="container-fluid vh-100 d-flex flex-column" style="background: linear-gradient(to bottom, purple, red);">
+<div class="container-fluid vh-100 d-flex flex-column position-relative">
+    <!-- Video Background -->
+    <video autoplay muted loop playsinline class="background-video">
+        <source src="/video/star-guardian-2022.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay for Readability -->
+    <div class="video-overlay"></div>
+
     <!-- Header -->
-    <header class="p-3 m-0">
-        <h1 class="text-white m-0">HR ERP - Employee Dashboard</h1>
+    <header class="p-3 text-white m-0">
+        <h1 class="m-0">HR ERP - Employee Dashboard</h1>
     </header>
 
     <!-- Main Content with Sidebar -->
@@ -14,20 +23,24 @@
             <h4 class="text-center mb-4">Employee Menu</h4>
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#update-info" onclick="showSection('update-info')">Update Information</a>
+                    <a class="nav-link text-white sidebar-link" href="#update-info" onclick="showSection('update-info')">Update Information</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#current-projects" onclick="showSection('current-projects')">Current Projects</a>
+                    <hr class="border-light">
+                    <a class="nav-link text-white sidebar-link" href="#current-projects" onclick="showSection('current-projects')">Current Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#schedule" onclick="showSection('schedule')">View Schedule</a>
+                    <hr class="border-light">
+                    <a class="nav-link text-white sidebar-link" href="#schedule" onclick="showSection('schedule')">View Schedule</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#manage-department" onclick="showSection('manage-department')">View Departments</a>
+                    <hr class="border-light">
+                    <a class="nav-link text-white sidebar-link" href="#manage-department" onclick="showSection('manage-department')">View Departments</a>
                 </li>
                 <li class="nav-item">
+                    <hr class="border-light">
                     <form method="post" asp-page-handler="Logout">
-                        <button type="submit" class="nav-link text-white btn btn-link">Logout</button>
+                        <button type="submit" class="nav-link text-white btn btn-link sidebar-link w-100 text-start">Logout</button>
                     </form>
                 </li>
             </ul>
@@ -193,17 +206,182 @@
     </div>
 
     <!-- Footer -->
-    <footer class="p-3 text-center m-0">
+    <footer class="p-3 text-center text-white m-0">
         <a href="/Contact" class="text-white mx-2">Contact</a>
         <a href="/About" class="text-white mx-2">About Us</a>
         <a href="https://github.com/yourusername" class="text-white mx-2">Profile</a>
     </footer>
 </div>
 
-<script>
-    function showSection(sectionId) {
-        document.querySelectorAll('main > div').forEach(div => div.classList.add('d-none'));
-        document.getElementById(sectionId).classList.remove('d-none');
-        document.getElementById('welcome-section').classList.add('d-none');
+<style>
+    /* General Styles */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: transparent;
+        margin: 0;
+        overflow: hidden;
     }
+
+    h1, h2, h4 {
+        color: #333;
+    }
+
+    .card {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: rgba(255, 255, 255, 0.75);
+    }
+
+    /* Video Background */
+    .background-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    /* Overlay for Readability */
+    .video-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: -1;
+    }
+
+    /* Header and Footer */
+    header {
+        background: linear-gradient(90deg, rgba(106, 183, 245, 0.75), rgba(245, 169, 208, 0.75)) !important; /* Blue-to-pink gradient with transparency */
+        position: relative; /* Ensure header/footer are above the video */
+    }
+
+    footer {
+        background: linear-gradient(90deg, rgba(245, 169, 208, 0.75), rgba(106, 183, 245, 0.75)) !important; /* Blue-to-pink gradient with transparency */
+        position: relative; /* Ensure header/footer are above the video */
+    }
+
+    /* Sidebar */
+    .bg-dark {
+        background: linear-gradient(180deg, rgba(106, 183, 245, 0.75), rgba(245, 169, 208, 0.75)) !important;
+        height: 100%;
+        position: relative;
+    }
+
+    .sidebar-link {
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s, padding-left 0.3s;
+        position: relative;
+        color: #FFFFFF;
+    }
+
+        .sidebar-link:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding-left: 20px;
+        }
+
+        .sidebar-link.active {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+            .sidebar-link.active::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 15px;
+                right: 15px;
+                height: 2px;
+                background-color: #FFFFFF;
+            }
+
+    /* Separator Line */
+    hr {
+        border-color: rgba(255, 255, 255, 0.5);
+        margin: 0.5rem 0;
+    }
+
+    /* Tables */
+    .table {
+        margin-bottom: 0;
+    }
+
+        .table th {
+            background-color: rgba(255, 255, 255, 0.75);
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+    .table-hover tbody tr:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    /* Form Inputs */
+    .form-control, .form-select {
+        background-color: rgba(255, 255, 255, 0.75);
+        border-color: #ced4da;
+    }
+
+    /* Buttons */
+    .btn-primary {
+        background: linear-gradient(90deg, rgba(106, 183, 245, 0.75), rgba(245, 169, 208, 0.75));
+        border: none;
+        transition: background 0.3s;
+    }
+
+        .btn-primary:hover {
+            background: linear-gradient(90deg, rgba(106, 183, 245, 0.9), rgba(245, 169, 208, 0.9));
+        }
+
+    /* Alerts */
+    .alert-success {
+        background: linear-gradient(90deg, rgba(106, 183, 245, 0.75), rgba(245, 169, 208, 0.75));
+        color: #333;
+    }
+
+    .alert-danger {
+        background: linear-gradient(90deg, rgba(245, 169, 208, 0.75), rgba(106, 183, 245, 0.75));
+        color: #333;
+    }
+
+    /* Main Content Background */
+    main {
+        background-color: transparent !important;
+    }
+</style>
+
+<script>
+    let currentSection = 'welcome-section'; // Default section
+
+    function showSection(sectionId) {
+        // Hide all sections
+        document.querySelectorAll('main > div').forEach(div => div.classList.add('d-none'));
+
+        // Show the selected section
+        document.getElementById(sectionId).classList.remove('d-none');
+
+        // Update the active sidebar link
+        document.querySelectorAll('.sidebar-link').forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${sectionId}`) {
+                link.classList.add('active');
+            }
+        });
+
+        // Update the current section
+        currentSection = sectionId;
+    }
+
+    // Show the correct section on page load
+    document.addEventListener('DOMContentLoaded', () => {
+        if (currentSection) {
+            showSection(currentSection);
+        }
+    });
 </script>

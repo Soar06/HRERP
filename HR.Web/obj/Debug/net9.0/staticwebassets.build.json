@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uhMY8QfX9gYjCLaAYJhvJuUrgx7z5Hg3WGy/eRNhRJ8=",
+  "Hash": "HhWfYRGCPm1yEMuDjXJaFQ5dMBYymsumFY4l6hPDqrk=",
   "Source": "HR.Web",
   "BasePath": "_content/HR.Web",
   "Mode": "Default",
@@ -6516,6 +6516,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Identity": "D:\\.Net\\HRERP\\HR.Web\\wwwroot\\video\\star-guardian-2022.mp4",
+      "SourceId": "HR.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\.Net\\HRERP\\HR.Web\\wwwroot\\",
+      "BasePath": "_content/HR.Web",
+      "RelativePath": "video/star-guardian-2022#[.{fingerprint}]?.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2eljdeyadi",
+      "Integrity": "CrgD2XDizJscUBWyYqHWZzZYqkz/y8Ju4do3KPj+EBg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\video\\star-guardian-2022.mp4"
     }
   ],
   "Endpoints": [
@@ -46326,6 +46347,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-JKWeHUaANNuffeRatdc54UCb84RoxjEw/nTq8Mops8Y="
+        }
+      ]
+    },
+    {
+      "Route": "video/star-guardian-2022.2eljdeyadi.mp4",
+      "AssetFile": "D:\\.Net\\HRERP\\HR.Web\\wwwroot\\video\\star-guardian-2022.mp4",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3802783"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/mp4"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CrgD2XDizJscUBWyYqHWZzZYqkz/y8Ju4do3KPj+EBg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 19:16:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2eljdeyadi"
+        },
+        {
+          "Name": "label",
+          "Value": "video/star-guardian-2022.mp4"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CrgD2XDizJscUBWyYqHWZzZYqkz/y8Ju4do3KPj+EBg="
+        }
+      ]
+    },
+    {
+      "Route": "video/star-guardian-2022.mp4",
+      "AssetFile": "D:\\.Net\\HRERP\\HR.Web\\wwwroot\\video\\star-guardian-2022.mp4",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3802783"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/mp4"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CrgD2XDizJscUBWyYqHWZzZYqkz/y8Ju4do3KPj+EBg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 19:16:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CrgD2XDizJscUBWyYqHWZzZYqkz/y8Ju4do3KPj+EBg="
         }
       ]
     }
