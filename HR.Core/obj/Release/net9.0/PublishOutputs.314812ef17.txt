@@ -1,0 +1,4 @@
+D:\.Net\HRERP\publish\HR.Core.dll
+D:\.Net\HRERP\publish\HR.Core.deps.json
+D:\.Net\HRERP\publish\HR.Core.pdb
+D:\.Net\HRERP\publish\BCrypt.Net-Next.dll
